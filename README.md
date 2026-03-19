@@ -37,7 +37,7 @@ permissions:
 jobs:
   sync-<ENV_NAME1>:
     name: Sync to <ENV_NAME1> GHES instance
-    uses: UKHomeOffice/core-cloud-workflows-actions-sync/.github/workflows/sync_hub.yaml@1.0.0
+    uses: Home-Office-Digital/core-cloud-workflows-actions-sync/.github/workflows/sync_hub.yaml@1.0.0
     with:
       ghes-instance-url: 'https://<GHES-HOSTNAME1>'
       ghes-owner: '<GHES-OWNER1>'
@@ -46,7 +46,7 @@ jobs:
     secrets: inherit
   sync-<ENV_NAME2>:
     name: Sync to <ENV_NAME2> GHES instance
-    uses: UKHomeOffice/core-cloud-workflows-actions-sync/.github/workflows/sync_hub.yaml@1.0.0
+    uses: Home-Office-Digital/core-cloud-workflows-actions-sync/.github/workflows/sync_hub.yaml@1.0.0
     with:
       ghes-instance-url: 'https://<GHES-HOSTNAME2>'
       ghes-owner: '<GHES-OWNER2>'
